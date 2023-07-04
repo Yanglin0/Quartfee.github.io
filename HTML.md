@@ -1,5 +1,6 @@
 1. HTML是超文本标记语言（HyperText Markup Language）的缩写。文件后缀名为<font color=red>.html</font>。用于定义网页内容的含义和结构。  
 2. 学习过程使用vscode编辑器，创建HTML文件时，可尝试在面板输入<font color=red>!</font>即可完成如下的内容输入。  
+
 ```html
     <!DOCTYPE html>    <!-- 声明为HTML5文档-->
     <html lang="en">   <!-- 元素是 HTML 页面的根元素-->
@@ -14,11 +15,12 @@
     </body>
     </html>
 ```
+
 通过右键页面空白处，(VScode 安装<kbd>Live Server</kbd>插件)点击<font color=red>Open with Live Server</font>即可在浏览器中打开html文件。  
 3. HTML标记元素
    HTML使用“标记”（markup）来注明文本、图片和其它内容。如下为各个“元素”的作用及使用。
 
-   * **标题**  
+* **标题**  
   HTML标题通过`<h1>~<h6>` 标签来定义
 
   ```html
@@ -27,14 +29,14 @@
     <h3>标题三</h3>
   ```
 
-   * **段落**
+* **段落**
   通过标签`<p>`定义
 
   ```html
     <p>段落</p>
   ```
 
-   * **链接**
+* **链接**
   通过标签`<a>`来定义
 
   ```html
@@ -51,7 +53,7 @@
     <a href="#C4">跳到第四章</a>
   ```
 
-  * **图像**
+* **图像**
   通过标签`<img>`定义
 
   ```html
@@ -60,7 +62,7 @@
 
   `src`属性要显示为图片文件的位置URL，即图片文件的路径，`alt`属性当获取图片出现问题是显示的文字（占位符），还可为图片指定高宽度（可能导致图片变形）
 
-  * **表格**
+* **表格**
   通过标签`<table>`定义。`<tr>`标签定义行，`<td>`标签定义每行的单元格，`<th>`定义表头，
 
   ```html
@@ -80,7 +82,7 @@
     </table>
   ```
   
-  * **列表**
+* **列表**
   HTML支持有序、无序和定义列表：
   无序列表使用`<ul>`
   
@@ -103,7 +105,8 @@
 
   自定义列表以`<dl>`标签开始。每个自定义列表项以`<dt>`开始，每个自定义列表项的定义以`<dd>`开始。
 
-  * **表单**`<form>`标签
+* **表单**`<form>`标签
+
   ```html
   <form>
     <!-- 文本框，注意有 placeholder 提示符 -->
@@ -117,12 +120,14 @@
   <input type="reset" value="重 置">
   </form>
   ```
+
   `input`标签用于输入，type属性可以定义为text,password,submit,reset,date等，根据实际需要进行定义。  
 
 4. 区块元素和内联元素  
       块级元素在浏览器显示时，通常会以新行开始，比如`<h1>`,`<p>`,`<ul>`,`<table>`,`<pre>`,`<div>`,`<table>`等。内联元素一个接一个进行显示，不会新起一行，比如`<span>`,`<input>`,`<td>`,`<a>`,`<img>`,`<b>`,`<a>`等。
 5. 特殊字符
    在HTML中，某些字符是预留的。不能使用小于号(<)和大于号(>)，这是因为浏览器会误认为它们是标签。如果要正确显示，则需要在HTML源代码中使用字符实体，可参考<a href="https://www.runnoob.com/tags/ref-entities.html" target="_blank">ISO-8859-1 字符实体手册</a>
+
    ```html
     <p>有多&nbsp;&nbsp;&nbsp;远，滚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多远！</p>
     <hr>
@@ -131,6 +136,5 @@
       &lt;h1&gt;这是个一级标题&lt;/h1&gt;
       &lt;p&gt;这是一个段落&lt;p&gt;
       &lt;a href="https://twitter.com/"&gt;眼见何事，情系何处，身处何方，心思何人&lt;/a&gt;
-    <pre>
+    </pre>
    ```  
-6. 

@@ -1,0 +1,26 @@
+
+.blog_main_content_first>div {
+    transition: all 0.5s ease;
+    background-color: #00283A;
+        width: 30%;
+        height: 200px;
+        margin: 0 20px 0;
+        border-radius: 1rem;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+}
+.blog_main_content_first>div:hover {
+    background-color: rgb(234, 119, 119);
+    transform: scale(1.2);
+}
+
+
+.blog_main_content_second>a {
+    transition: all 0.5s ease;
+}
+.blog_main_content_second>a:hover {
+    transform: scale(0.8);
+}

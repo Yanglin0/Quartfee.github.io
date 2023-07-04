@@ -1,3 +1,7 @@
 {
-    "open-in-browser.default": "Chrome"
+    "open-in-browser.default": "Chrome",
+    "cSpell.words": [
+        "unshift"
+    ],
+    "liveServer.settings.port": 5501
 }

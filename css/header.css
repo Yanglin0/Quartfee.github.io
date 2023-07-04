@@ -1,0 +1,76 @@
+:root {
+    --firstColor: white;
+    --secondColor: rgb(253, 46, 94);
+    --content-max-width: 1200px;
+    --headerColor: #00283A;
+    --headerhover: rgb(0, 40, 58, .8);
+    --bagColor: #02162b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--firstColor)
+}
+
+a:hover {
+    color: var(--secondColor)
+}
+
+body {
+    /* background-image: url(../imag/back4.jpg); */
+    background-color: var(--bagColor);
+    /* backdrop-filter: blur(.1rem); */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+
+header {
+    border-radius: 0% 0% 10px 10px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    max-width: var(--content-max-width);
+    padding-inline: 2rem;
+    margin-inline: auto;
+    align-self: flex-start;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header .menu.open {
+    height: 12rem;
+    opacity: 1;
+}
+
+header .toggleBtn {
+    color: var(--firstColor);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.containerheader {
+    position: fixed;
+    height: 4rem;
+    width: 100vw;
+}
